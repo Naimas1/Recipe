@@ -1,0 +1,15 @@
+@model EditProfileViewModel
+
+<form asp-action="EditProfile" method="post">
+    <div>
+        <label asp-for="Email"></label>
+        <input asp-for="Email" />
+        <span asp-validation-for="Email"></span>
+    </div>
+    <div>
+        <label asp-for="UserName"></label>
+        <input asp-for="UserName" />
+        <span asp-validation-for="UserName"></span>
+    </div>
+    <button type="submit">Save Changes</button>
+</form>
